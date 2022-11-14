@@ -10,30 +10,29 @@
 using namespace std;
 
 void Register::Intake() {
-	cout << "\nCombien de millilitres fait votre biberon ?\n";
+	cout << "Combien de millilitres fait votre biberon ?\n";
 	cin >> dose;
-	dose + tm;
+	cout << "\n";
 }
 
 void Register::Add() {
-
 	quantity.push_back(dose);
-
-	cout << "the list is:" << endl;
-	for (auto v : quantity)
-		cout << v << "\n";
-
 	Register::Time();
+	Register::Print();
 }
 
 int Register::Time() {
 	auto end = chrono::system_clock::now();
-
 	time_t end_time = chrono::system_clock::to_time_t(end);
-
 	tm = ctime(&end_time);
 
-	cout << tm <<"\n";
+	quantity.push_back(tm);
 
 	return 0;
+}
+
+void Register::Print() {
+	cout << "the list is:" << endl;
+	for (auto v : quantity)
+		cout << v << "\n";
 }

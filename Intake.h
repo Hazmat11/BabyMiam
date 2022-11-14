@@ -13,4 +13,6 @@ public:
 	list < string > quantity;
 	int Time();
 	char *tm;
+	list < char > date;
+	void Print();
 };
