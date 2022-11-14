@@ -8,6 +8,7 @@
 #undef main
 
 #include "click.h"
+#include "Intake.h"
 
 #define WIDTHGAME 540
 #define HEIGHTWINDOW 630
@@ -15,18 +16,20 @@
 using namespace std;
 
 int main(void) {
+
+	Click clik;
+	Register intake;
+
 	SDL_Event event;
 	bool quit = false;
-	Click clik;
 	MainSDLWindow* sdlwin = new MainSDLWindow;
+
 	if (sdlwin->Init("BabyMiam", WIDTHGAME, HEIGHTWINDOW) == EXIT_FAILURE)
 	{
 		exit(EXIT_FAILURE);
 	}
 
 	TTF_Init();
-
-	int exit = 0;
 
 	while (!quit)
 	{
@@ -38,6 +41,8 @@ int main(void) {
 			quit = true;
 			break;
 		}
-		clik.EventManager();
+		//clik.EventManager();
+		intake.Intake();
+		intake.Add();
 	}
 }

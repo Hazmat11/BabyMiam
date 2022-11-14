@@ -134,6 +134,7 @@
   <ItemGroup>
     <ClCompile Include="bottle.cpp" />
     <ClCompile Include="click.cpp" />
+    <ClCompile Include="Intake.cpp" />
     <ClCompile Include="MainSDLWindow.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Time.cpp" />
@@ -141,6 +142,7 @@
   <ItemGroup>
     <ClInclude Include="bottle.h" />
     <ClInclude Include="click.h" />
+    <ClInclude Include="Intake.h" />
     <ClInclude Include="MainSDLWindow.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

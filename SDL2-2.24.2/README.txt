@@ -1,21 +1,15 @@
 
-                         Simple DirectMedia Layer
+SDL_ttf 2.0
 
-                                  (SDL)
+The latest version of this library is available from GitHub:
+https://github.com/libsdl-org/SDL_ttf/releases
 
-                                Version 2.0
+This library is a wrapper around the FreeType and Harfbuzz libraries, allowing you to use TrueType fonts to render text in SDL applications.
 
----
-https://www.libsdl.org/
+See the header file SDL_ttf.h and the example showfont.c for documentation on this library. This documentation is also available online at https://wiki.libsdl.org/SDL_ttf
 
-Simple DirectMedia Layer is a cross-platform development library designed
-to provide low level access to audio, keyboard, mouse, joystick, and graphics
-hardware via OpenGL and Direct3D. It is used by video playback software,
-emulators, and popular games including Valve's award winning catalog
-and many Humble Bundle games.
+Be careful when including fonts with your application, as many of them are copyrighted. The Microsoft fonts, for example, are not freely redistributable and even the free "web" fonts they provide are only redistributable in their special executable installer form (May 1998). There are plenty of freeware and shareware fonts available on the Internet though, and may suit your purposes.
 
-More extensive documentation is available in the docs directory, starting
-with README.md
+This library is under the zlib license, see the file "LICENSE.txt" for details.
 
-Enjoy!
-	Sam Lantinga				(slouken@libsdl.org)
+Portions of this software are copyright © 2013 The FreeType Project (www.freetype.org).  All rights reserved.
