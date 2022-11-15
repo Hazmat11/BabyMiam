@@ -137,7 +137,6 @@
     <ClCompile Include="Intake.cpp" />
     <ClCompile Include="MainSDLWindow.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Time.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bottle.h" />

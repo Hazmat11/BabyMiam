@@ -8,11 +8,12 @@ class Register
 {
 public:
 	void Intake();
-	string dose;
 	void Add();
-	list < string > quantity;
 	int Time();
-	char *tm;
-	list < char > date;
 	void Print();
+
+private:
+	string dose;
+	char* tm;
+	list < string > quantity;
 };

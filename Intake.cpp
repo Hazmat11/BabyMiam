@@ -13,10 +13,18 @@ void Register::Intake() {
 	cout << "Combien de millilitres fait votre biberon ?\n";
 	cin >> dose;
 	cout << "\n";
+	if (dose == "blurp") {
+		quantity.pop_back();
+		quantity.pop_back();
+		quantity.pop_back();
+	}
+
+	else {
+		quantity.push_back(dose);
+	}
 }
 
 void Register::Add() {
-	quantity.push_back(dose);
 	Register::Time();
 	Register::Print();
 }
