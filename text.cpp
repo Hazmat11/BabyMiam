@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
 #include <SDL_ttf.h>
@@ -13,11 +13,9 @@ void Text::Menu() {
 	font = TTF_OpenFont("LEMONMILK-Light.ttf", 150);
 
 	if (font != 0) {
-		SDL_Color blanc = { 0, 0, 0 }; //attention ce n'est pas un Uint32
-		SDL_Surface* texte = TTF_RenderText_Blended(font, "coucou", blanc);
+		SDL_Color noir = { 255, 255, 255 }; //attention ce n'est pas un Uint32
+		SDL_Surface* texte = TTF_RenderText_Blended(font, "coucou", noir);
 		//affichage
-		SDL_FreeSurface(texte); //On oublie toujours pas
-		TTF_CloseFont(font);
 	}
-	else { cout << "foirage à l'ouverture de times.ttf" << endl; }
+	else { cout << "foirage ï¿½ l'ouverture de times.ttf" << endl; }
 }

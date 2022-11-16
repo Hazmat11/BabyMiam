@@ -137,11 +137,15 @@
     <ClCompile Include="Intake.cpp" />
     <ClCompile Include="MainSDLWindow.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Shopping.cpp" />
     <ClCompile Include="text.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bottle.h" />
     <ClInclude Include="click.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="Shopping.h" />
     <ClInclude Include="text.h" />
     <ClInclude Include="Intake.h" />
     <ClInclude Include="MainSDLWindow.hpp" />

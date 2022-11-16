@@ -6,7 +6,8 @@
 class MainSDLWindow {
 public:
 	int sdl();
+	SDL_Renderer* GetRenderer();
 
 private:
-
+	SDL_Renderer* renderer;
 };
