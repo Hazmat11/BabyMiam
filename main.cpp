@@ -3,44 +3,30 @@
 #include <SDL.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <SDL_ttf.h>
 
 #undef main
 
 #include "click.h"
 #include "Intake.h"
-
-#define WIDTHGAME 540
-#define HEIGHTWINDOW 630
+#include "text.h"
+#include "MainSDLWindow.hpp"
 
 using namespace std;
 
 int main(void) {
 
+	int a = 1;
+
 	Click clik;
 	Register intake;
+	Text tex;
+	MainSDLWindow sdl;
 
-	SDL_Event event;
-	bool quit = false;
-	MainSDLWindow* sdlwin = new MainSDLWindow;
+	sdl.sdl();
 
-	if (sdlwin->Init("BabyMiam", WIDTHGAME, HEIGHTWINDOW) == EXIT_FAILURE)
+	while (a == 1)
 	{
-		exit(EXIT_FAILURE);
-	}
-
-	TTF_Init();
-
-	while (!quit)
-	{
-		SDL_WaitEvent(&event);
-
-		switch (event.type)
-		{
-		case SDL_QUIT:
-			quit = true;
-			break;
-		}
+		tex.Menu();
 		//clik.EventManager();
 		intake.Intake();
 		intake.Add();
