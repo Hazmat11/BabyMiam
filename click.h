@@ -4,4 +4,5 @@
 class Click {
 	public:
 		void EventManager();
+		bool running = true;
 };

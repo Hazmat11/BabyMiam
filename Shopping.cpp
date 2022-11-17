@@ -45,5 +45,5 @@ void Shop::Main() {
 	if (answer == 'C')
 	{
 		Shop::CleanList();
-	};
+	}
 }

@@ -7,16 +7,20 @@
 using namespace std;
 
 void Click::EventManager() {
-	int a = 1;
 	SDL_Event event;
-	SDL_PollEvent(&event);
 
-	if (SDL_MOUSEBUTTONDOWN && a == 1) {
-		cout << "test";
-		a = 0;
-	}
-
-	else {
-		cout << "non";
+	while (SDL_PollEvent(&event)) {
+		switch (event.type) {
+		case SDL_QUIT:
+			this->running = false;
+			break;
+		case SDL_MOUSEBUTTONDOWN:
+			if (event.button.button == SDL_BUTTON_LEFT) cout << "test";
+		case SDL_KEYDOWN:
+			switch (event.key.keysym.sym) {
+			case SDLK_1:
+				cout << "hummmmmm";
+			}
+		}
 	}
 }
