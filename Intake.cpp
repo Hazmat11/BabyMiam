@@ -21,6 +21,7 @@ void Register::Intake() {
 	else {
 		quantity.push_back(dose);
 	}
+	Register::Add();
 }
 
 void Register::Add() {

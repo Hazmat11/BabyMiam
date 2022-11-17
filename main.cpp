@@ -25,9 +25,6 @@ const int SCREEN_HEIGHT = 480;
 int main(int argc, char* args[])
 {
 	Click clik;
-	Text tex;
-	MainSDLWindow sdl;
-	Menu menu;
 
 	//Main loop flag
 	bool quit = false;
@@ -83,8 +80,5 @@ int main(int argc, char* args[])
 	{
 		clik.EventManager();
 	}
-
-
-
 	return 0;
 }
